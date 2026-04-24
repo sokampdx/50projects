@@ -3,12 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <title>My Project</title>
+    <title>Rotating Navigation</title>
 </head>
 <body>
-    <h1>Project Starter</h1>
+    <div class="container">
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <h1>三國演義</h1>
+            <small>羅貫中</small>
+            <p>馬騰 Ma Teng（生年不詳－212年），字壽成，中國東漢末年之武將，是東漢初年的將領馬援之後人，父親為馬平任蘭干縣尉，後因失官而留在隴西。</p>
+            <p>當時涼州刺史耿鄙委任治中程球，程球為貪官，士人怨之。</p>
+            <p>漢靈帝中平元年（184年）十一月，胡人北宮伯玉與先零羌人聯合起兵反叛漢，朝廷欲討伐叛亂。耿鄙徵馬騰為軍從事，統領部隊，龐德跟馬騰攻擊反叛羌氐。後征戰有功，龐德升遷至校尉，馬騰提升為軍司馬。</p>
+            <p>中平四年187年，夏四月，韓遂乃殺邊章及北宮伯玉、李文侯，擁兵十餘萬，進圍隴西。涼州刺史耿鄙討金城賊韓遂，太守李相如反，與韓遂結盟，共殺涼州刺史耿鄙。韓遂寇漢陽，漢陽太守傅燮戰死。而韓遂聯合耿鄙司馬馬騰，亦擁兵反叛、與漢陽人王國並叛，自號「合眾將軍」，共同推舉王國為主帥，朝廷名為「三輔作亂」。</p>
+            <h3>馬騰 Ma Teng</h3>
+            <img src="https://www.nobuwiki.org/pic_san/character_san/0026.jpg" alt="doggy">
+            <p>189年，王國被朝廷派來的軍隊擊敗，馬騰和韓遂等人共是廢掉王國，又劫持閻忠為主帥。不久閻忠病死，馬韓等人互相攻伐，勢力有所衰弱。</p>
+            <p>192年，董卓進洛陽時曾拉攏馬騰和韓遂，要他們一起出兵進京。之後董卓被呂布所弒，李傕等人專權，馬騰及韓遂合兵到達長安，進屯霸橋。馬騰有私事求於李傕，沒有得到應允。於是拜韓遂為鎮西將軍，遣還金城，馬騰為征西將軍，屯於郿。</p>
+            <p>194年 興平元年,諫議大夫種邵為報父仇與侍中馬宇、劉焉子左中郎將劉範,子治書御史劉誕等為內應，計劃使馬騰襲長安，馬騰得劉焉五千兵之助，攻李傕、郭汜和樊稠等人。韓遂率眾助馬騰攻李傕，兩軍對戰於長平觀，馬韓聯軍敗退返回涼州，前益州刺史種劭戰死、左中郎將劉範，治書御史劉誕、萬餘人被斬首。劉焉痛失二子。</p>
+            <p>195年，韓遂和馬騰返回涼州，李傕等人又與馬騰與韓遂議和，改任馬騰為安狄將軍，韓遂為安羌將軍。不久，馬騰與韓遂又再次互相攻伐。</p>
+            <p>197年，曹操在官渡與袁紹相持。馬騰及韓遂為關中軍閥割據勢力之一。於是曹操採用荀彧的建議，派鍾繇代理司隸校尉，持節督關中諸軍。鍾繇到達長安後，寫信給馬騰和韓遂，陳述利害關係，於是兩人願意歸順，各自送來兒子作人質。</p>
+            <p>202年，袁紹病逝，其子袁尚欲與馬騰及韓遂聯合，馬騰假裝答應。後曹操派鍾繇以袁尚所置的河東太守郭援以及匈奴南單于在平陽交戰，在曹操使者張既和傅乾等人的勸說下，馬騰決定幫助曹軍，派兒子馬超帶領萬餘人去幫助鍾繇擊郭援，馬騰遣子馬超將精兵逆之。郭援兵至平陽，輕率過河，眾止之卻不聽從，過河未半便被擊敗，馬超的部下龐德在戰場上親手斬殺郭援並降服單于。曹操表拜馬騰為征南將軍，韓遂為征西將軍，俱開府。</p>
+            <p>205年，曹操派張既徵集馬騰等人擊敗了高幹與張晟，斬殺了反叛的衛固等人。</p>
+            <p>208年，起先因部曲間的矛盾，馬騰和韓遂二人成為仇敵，韓遂殺掉了馬騰的妻子，二人連年交戰。曹操派鍾繇、韋端前去勸和，升馬騰為前將軍，改屯槐里，假節，封槐里侯。張既勸說馬騰放棄部隊，入朝為官，馬騰一度猶豫，騰自見年老，最終答應，來到鄴城。曹操上表封馬騰為衛尉，封其子馬超為偏將軍，代替馬騰統領部隊，屯於原地，又封其子馬休為奉車都尉，馬鐵為騎都尉，同其餘家屬徙往鄴城。</p>
+            <p>211年，馬超叛變起兵與曹操交戰，被擊敗。212年，因馬超叛變之事，曹操誅殺馬騰、馬休與馬鐵，同其餘家屬二百餘人。</p>
+         </div>
+    </div>
+    <nav>
+        <ul>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-user-alt"></i> About</li>
+            <li><i class="fas fa-envelope"></i> Contact</li>
+        </ul>
+    </nav>
     <script src="script.js"></script>
 </body>
 </html>
