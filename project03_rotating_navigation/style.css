@@ -133,3 +133,9 @@ nav ul li + li + li {
     color: #333;
     line-height: 1.5;
 }
+
+.img-box {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
