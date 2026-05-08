@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" /> -->
     <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
+    <title>Theme Clock</title>
+    <link rel="icon" href="data:," />
 </head>
 <body>
-    <h1>Project Starter</h1>
+    <!-- Inspired by this dribbble shot https://dribbble.com/shots/5958443-Alarm-clock -->
+
+    <button class="toggle">Dark Mode</button>
+    <div class="clock-container">
+        <div class="clock">
+            <div class="needle hour"></div>
+            <div class="needle minute"></div>
+            <div class="needle second"></div>
+            <div class="center-point"></div>
+        </div>
+
+        <div class="time"></div>
+        <div class="date"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
