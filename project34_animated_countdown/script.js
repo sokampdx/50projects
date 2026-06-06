@@ -1,20 +1,31 @@
-const nums = document.querySelectorAll('.nums span')
+// const nums = document.querySelectorAll('.nums span')
 const counter = document.querySelector('.counter')
 const finalMessage = document.querySelector('.final')
 const replay = document.getElementById('replay')
+const countdown = 50
+const numsContainer = document.querySelector('.nums')
 
+resetDOM()
 runAnimation()
 
 function resetDOM() {
+    numsContainer.innerHTML = ''
     counter.classList.remove('hide')
     finalMessage.classList.remove('show')
-    nums.forEach((num) => {
-        num.classList.value = ''
-    })
-    nums[0].classList.add('in')
+
+    for (var i = countdown; i >= 0; i--) {     
+        var newnum = document.createElement('span')
+        newnum.innerHTML = String(i)
+        if (i === countdown) {
+            newnum.classList.add('in')
+        }
+        numsContainer.appendChild(newnum)
+    }
+
 }
 
 function runAnimation() {
+    const nums = document.querySelectorAll('.nums span')
     const nextToLast = nums.length - 1
     nums.forEach((num, idx) => {
         num.addEventListener('animationend', (e) => {
